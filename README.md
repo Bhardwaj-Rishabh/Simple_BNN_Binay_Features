@@ -1,2 +1,2 @@
 # Simple_BNN_Binay_Features
-test repo
+This code uses simple binary features to run a simple binary neural network
