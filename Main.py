@@ -37,7 +37,7 @@ args = parser.parse_args()
 
 from weight_clip import weight_clip
 
-bndata_ = pk.load(open('../data_with_top_500_features.pkl','rb'))
+bndata_ = pk.load(open('./data/Binary501.pkl','rb'))
 '''
 convert (0 and 1) to (-1 and 1)
 '''
@@ -160,7 +160,6 @@ def Factory(model):
 		
 	train(args)
 
-Factory(models[2])
-#for i in range(8):
-#	Factory(models[i])
+for i in range(8):
+	Factory(models[i])
 
